@@ -1,6 +1,6 @@
 FROM debian:stable-slim
 
-MAINTAINER Suriya Soutmun <suriya@odd.works>
+#MAINTAINER Suriya Soutmun <suriya@odd.works>
 
 ARG DEBIAN_FRONTEND=noninteractive
 
@@ -62,7 +62,7 @@ RUN  mkdir -p /opt/selenium \
 #==================
 # Chrome webdriver
 #==================
-ARG CHROME_DRIVER_VERSION=2.32
+ARG CHROME_DRIVER_VERSION=2.33
 RUN wget --no-verbose -O /tmp/chromedriver_linux64.zip https://chromedriver.storage.googleapis.com/$CHROME_DRIVER_VERSION/chromedriver_linux64.zip \
   && rm -rf /opt/selenium/chromedriver \
   && unzip /tmp/chromedriver_linux64.zip -d /opt/selenium \
