@@ -1,2 +1,1 @@
-# selenium-chrome-headless
-Use chrome version 60 (beta) for screenshot in headless mode.
+The main [https://hub.docker.com/r/selenium/standalone-chrome](selenium standalon-chrome) image works in headless mode so this image is no longer needed.
